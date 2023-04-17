@@ -20,6 +20,8 @@ namespace RepositoryPattern
             string conString = builder.Build().GetConnectionString("DefaultConnection");
 
             MyContext myContext = MyContextFactory.Create(conString);
+            Shaul shaul = new Shaul();
+            shaul.test();
             TreatmentRepository tr = new TreatmentRepository(myContext);
             foreach (Treatment item in tr.GetAll())
             {
