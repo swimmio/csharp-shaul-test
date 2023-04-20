@@ -14,6 +14,7 @@ Content
 
 <!-- Steps - Do not remove this comment -->
 1. [Test Doc 1](test-doc-1.3vzzj.sw.md)
+2. [Test doc 2](test-doc-2.vf0ut.sw.md)
 
 
 <br/>
