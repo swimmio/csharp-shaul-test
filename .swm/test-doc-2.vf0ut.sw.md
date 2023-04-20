@@ -7,7 +7,7 @@ app_version: 1.6.3
 
 Some content
 
-[Test Doc 1](test-doc-1.3vzzj.sw.md)
+[www.google.com](bing.com)
 
 <br/>
 
