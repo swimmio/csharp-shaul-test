@@ -2,7 +2,7 @@
 id: cx3bk
 title: Playlist test 2
 file_version: 1.1.2
-app_version: 1.6.3
+app_version: 1.7.2
 ---
 
 <!-- Intro - Do not remove this comment -->
@@ -11,7 +11,7 @@ Shaul test
 <br/>
 
 <!-- Steps - Do not remove this comment -->
-1. [Test playlist](test-playlist.410gn.pl.sw.md)
+1. [Test playlist 1](test-playlist-1.sdmr0.pl.sw.md)
 
 
 <br/>
