@@ -29,6 +29,7 @@ namespace RepositoryPattern
             {
                 Console.WriteLine(item.Text);
             }
+            // Cherry pick this, with a squash commit
             Console.WriteLine(conString);
         }
     }
