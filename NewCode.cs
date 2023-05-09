@@ -15,6 +15,7 @@ namespace RepositoryPattern
         {
             // Commit 1
             // Commit 2 - develop keeps going
+            // Commit 3 - develop goes more
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("global.json");
