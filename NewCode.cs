@@ -21,6 +21,7 @@ namespace RepositoryPattern
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("global.json");
             string conString = builder.Build().GetConnectionString("DefaultConnection");
+            // I want to cherry pick this to the tag.
 
             MyContext myContext = MyContextFactory.Create(conString);
             TreatmentRepository tr = new TreatmentRepository(myContext);
