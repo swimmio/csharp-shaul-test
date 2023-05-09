@@ -13,8 +13,7 @@ namespace RepositoryPattern
     {
         static void Main(string[] args)
         {
-            // Another commit
-            // Test the pattern
+            // Commit 1
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("global.json");
