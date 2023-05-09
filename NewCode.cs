@@ -13,6 +13,7 @@ namespace RepositoryPattern
     {
         static void Main(string[] args)
         {
+            // Another commit
             // Test the pattern
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
