@@ -5,20 +5,7 @@ file_version: 1.1.2
 app_version: 1.9.11
 ---
 
-<!--MERMAID {width:100}-->
-```mermaid
-stateDiagram-v2
-[\*] --> Still
-Still --> [\*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-
-Moving --> Crash
-Crash --> [\*]
-
-```
-<!--MCONTENT {content: "stateDiagram-v2<br/>\n\\[\\*\\] \\-\\-\\> Still<br/>\nStill \\-\\-\\> \\[\\*\\]<br/>\nStill \\-\\-\\> Moving<br/>\nMoving \\-\\-\\> Still<br/>\nMoving \\-\\-\\> Crash\n\nMoving \\-\\-\\> Crash<br/>\nCrash \\-\\-\\> \\[\\*\\]<br/>\n<br/>"} --->
+<br/>
 
 <br/>
 
