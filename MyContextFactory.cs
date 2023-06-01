@@ -9,6 +9,8 @@ namespace RepositoryPattern
     {
         public static MyContext Create(string connectionString)
         {
+            const shaul = "shaul";
+            
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
             optionsBuilder.UseSqlServer(connectionString);
 
@@ -18,7 +20,6 @@ namespace RepositoryPattern
 
             return context;
         }
-
         public static void foo() {
             var someCode = "This is my code";
         }
