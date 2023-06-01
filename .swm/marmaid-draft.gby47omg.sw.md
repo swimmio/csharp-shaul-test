@@ -7,9 +7,17 @@ app_version: 1.9.11
 
 <!--MERMAID {width:100}-->
 ```mermaid
+stateDiagram-v2
+[\*] --> Still
+Still --> [\*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [\*]
+
 
 ```
-<!--MCONTENT {content: "<br/>"} --->
+<!--MCONTENT {content: "stateDiagram-v2<br/>\n\\[\\*\\] \\-\\-\\> Still<br/>\nStill \\-\\-\\> \\[\\*\\]<br/>\nStill \\-\\-\\> Moving<br/>\nMoving \\-\\-\\> Still<br/>\nMoving \\-\\-\\> Crash<br/>\nCrash \\-\\-\\> \\[\\*\\]<br/>\n\n<br/>"} --->
 
 <br/>
 
