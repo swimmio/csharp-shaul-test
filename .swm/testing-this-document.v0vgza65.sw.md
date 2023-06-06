@@ -36,7 +36,7 @@ and then this is just text a
 
 4
 
-5
+5s
 
 6
 
@@ -63,8 +63,6 @@ and then this is just text a
 17
 
 # And then there's this heading
-
-<br/>
 
 <br/>
 
