@@ -26,37 +26,7 @@ app_version: 1.10.2
 
 <br/>
 
-and then this is just text
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
+and then this is just text a
 
 <br/>
 
