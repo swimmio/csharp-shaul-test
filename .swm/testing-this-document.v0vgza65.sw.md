@@ -58,20 +58,6 @@ and then this is just text
 
 <br/>
 
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
 # And then there's this heading
 
 <br/>
