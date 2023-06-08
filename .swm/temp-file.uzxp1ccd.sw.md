@@ -44,26 +44,6 @@ Text TextText Text
 
 Text TextText Text
 
-<br/>
-
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 functions1.cs
-```c#
-13         {
-14             int result = a - b;
-15             Console.WriteLine("Subtraction Result: " + result);
-16             return result;
-17         }
-18     
-19         public void PrintMessage(string message)
-20         {
-21             Console.WriteLine("Printing message: " + message);
-22         }
-```
-
-<br/>
-
 Text TextText Text<br/>
 Text TextText TextText TextText Text
 
@@ -91,6 +71,10 @@ Text TextText TextText TextText Text
 Text TextText Text
 
 Text TextText Text
+
+## Asaf
+
+### Shaul
 
 Text TextText Text<br/>
 Text TextText TextText TextText Text
