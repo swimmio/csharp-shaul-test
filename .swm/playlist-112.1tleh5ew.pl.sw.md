@@ -11,8 +11,8 @@ test
 <br/>
 
 <!-- Steps - Do not remove this comment -->
-1. [Test Doc 1](test-doc-1.3vzzj.sw.md)
-2. [test doc 2 ](test-doc-2.itig0ell.sw.md)
+1. [test doc 2 ](test-doc-2.itig0ell.sw.md)
+2. [Test Doc 1](test-doc-1.3vzzj.sw.md)
 
 
 <br/>
