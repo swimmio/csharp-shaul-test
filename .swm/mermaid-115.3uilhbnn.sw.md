@@ -12,9 +12,9 @@ test
 <!--MERMAID {width:100}-->
 ```mermaid
 graph TD
-a --> `Shauf`
+a --> `Subtract`
 ```
-<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> `Shauf`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:10:3:3:`        public Shauf`\"/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> `Subtract`<swm-token data-swm-token=\":functions1.cs:12:5:5:`    public int Subtract(int a, int b)`\"/>"} --->
 
 <br/>
 
