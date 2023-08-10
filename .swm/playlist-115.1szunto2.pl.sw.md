@@ -12,7 +12,6 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [Test 1.15 2](test-115-2.p141l8n3.sw.md)
-2. [Test 1.15 1](test-115-1.cvfi5iy4.sw.md)
 
 
 <br/>
