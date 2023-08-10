@@ -7,9 +7,9 @@ app_version: 1.15.0
 
 <!--MERMAID {width:100}-->
 ```mermaid
-
+graph
 ```
-<!--MCONTENT {content: "<br/>"} --->
+<!--MCONTENT {content: "graph"} --->
 
 <br/>
 
