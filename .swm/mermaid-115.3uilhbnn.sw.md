@@ -5,17 +5,7 @@ file_version: 1.1.3
 app_version: 1.15.0
 ---
 
-<!--MERMAID {width:100}-->
-```mermaid
-sequenceDiagram
-Alice->>+John: Hello John, how are you?
-Alice->>+John: John, can you hear me?
-John-->>-Alice: Hi Alice, I can hear you!
-John-->>-Alice: I feel great!
-
-
-```
-<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi Alice, I can hear you!<br/>\nJohn\\-\\-\\>>-Alice: I feel great!<br/>\n\n<br/>"} --->
+test
 
 <br/>
 
