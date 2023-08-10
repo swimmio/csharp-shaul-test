@@ -13,6 +13,7 @@ test
 <!-- Steps - Do not remove this comment -->
 1. [Test 1.15 2](test-115-2.p141l8n3.sw.md)
 2. [Yahoo](https://yahoo.com)
+3. [Playlist test 2](playlist-test-2.cx3bk.pl.sw.md)
 
 
 <br/>
