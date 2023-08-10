@@ -7,7 +7,7 @@ namespace RepositoryPattern.repositories
 {
     class TreatmentRepository : Repository<Treatment>, ITreatmentRepository
     {
-        public Shaud
+        public Shauf
         {
             tax { return Context as MyContext; }
         }
