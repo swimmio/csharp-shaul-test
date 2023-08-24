@@ -11,11 +11,9 @@ sequenceDiagram
 Alice->>+John: Hello John, how are you?
 Alice->>+John: John, can you hear me?
 John-->>-Alice: Hi I can hear you!
-John-->>-Alice: I feel great!
+John-->>-Alice: I feel `Dispose`
 ```
-<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi I can hear you!<br/>\nJohn\\-\\-\\>>-Alice: I feel great!<br/>"} --->
-
-<br/>
+<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi I can hear you!<br/>\nJohn\\-\\-\\>>-Alice: I feel `Dispose`<swm-token data-swm-token=\":UnitOfWork.cs:22:5:5:`        public void Dispose()`\"/><br/>"} --->
 
 <br/>
 
