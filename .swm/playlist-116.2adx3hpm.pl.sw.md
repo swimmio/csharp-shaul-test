@@ -12,7 +12,7 @@ Test
 
 <!-- Steps - Do not remove this comment -->
 1. [test 1.16 6](test-116-6.6krrb1h9.sw.md)
-2. [Google](https://google.com)
+2. [yahoo](https://yahoo.com)
 
 
 <br/>
