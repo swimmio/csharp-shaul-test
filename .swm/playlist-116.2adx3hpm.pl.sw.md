@@ -11,8 +11,8 @@ Test
 <br/>
 
 <!-- Steps - Do not remove this comment -->
-1. [Test](test.797vbqis.sw.md)
-2. [test 1.16 6](test-116-6.6krrb1h9.sw.md)
+1. [test 1.16 6](test-116-6.6krrb1h9.sw.md)
+2. [Test](test.797vbqis.sw.md)
 
 
 <br/>
