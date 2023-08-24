@@ -7,31 +7,15 @@ app_version: 1.16.0
 
 <!--MERMAID {width:100}-->
 ```mermaid
-classDiagram
-Animal <|-- Duck
-Animal <|-- Fish
-Animal <|-- Zebra
-Animal : +int age
-Animal : +String gender
-Animal: +`CallAddFunction`()
-Animal: +mate()
-class Duck{
-+String beakColor
-+swim()
-+quack()
-}
-class Fish{
-\-int sizeInFeet
-\-canEat()
-}
-class Zebra{
-+bool is\_wild
-+run()
-}
+sequenceDiagram
+Alice->>+John: Hello John, how are you?
+Alice->>+John: John, can you hear me?
+John-->>-Alice: Hi Alice, I can hear you!
+John-->>-`Find`: I feel great!
 
 
 ```
-<!--MCONTENT {content: "classDiagram<br/>\nAnimal <|-- Duck<br/>\nAnimal <|-- Fish<br/>\nAnimal <|-- Zebra<br/>\nAnimal : +int age<br/>\nAnimal : +String gender<br/>\nAnimal: +`CallAddFunction`<swm-token data-swm-token=\":functions2.cs:5:5:5:`    public void CallAddFunction()`\"/>()<br/>\nAnimal: +mate()<br/>\nclass Duck{<br/>\n+String beakColor<br/>\n+swim()<br/>\n+quack()<br/>\n}<br/>\nclass Fish{<br/>\n\\-int sizeInFeet<br/>\n\\-canEat()<br/>\n}<br/>\nclass Zebra{<br/>\n+bool is\\_wild<br/>\n+run()<br/>\n}<br/>\n\n<br/>"} --->
+<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi Alice, I can hear you!<br/>\nJohn\\-\\-\\>>-`Find`<swm-token data-swm-token=\":repositories/IRepository.cs:11:6:6:`        IEnumerable&lt;TModel&gt; Find(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate);`\"/>: I feel great!<br/>\n\n<br/>"} --->
 
 <br/>
 
