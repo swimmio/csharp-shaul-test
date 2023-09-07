@@ -5,15 +5,13 @@ file_version: 1.1.3
 app_version: 1.17.0
 ---
 
-<!--MERMAID {width:100}-->
+<!--MERMAID {width:25}-->
 ```mermaid
 graph TD
-
 a --> b
-
 c -->d
 ```
-<!--MCONTENT {content: "graph TD\n\na \\-\\-\\> b\n\nc \\-\\-\\>d"} --->
+<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\>d"} --->
 
 <br/>
 
