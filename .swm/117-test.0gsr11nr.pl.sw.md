@@ -12,7 +12,7 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [Another doc](another-doc.jmt3qyqt.sw.md)
-2. [Google](https://www.google.com/)
+2. [yahoo](https://www.google.com/)
 
 
 <br/>
