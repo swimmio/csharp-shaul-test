@@ -13,6 +13,7 @@ test
 <!-- Steps - Do not remove this comment -->
 1. [Another doc](another-doc.jmt3qyqt.sw.md)
 2. [yahoo](https://www.google.com/)
+3. [Playlist test 2](playlist-test-2.cx3bk.pl.sw.md)
 
 
 <br/>
