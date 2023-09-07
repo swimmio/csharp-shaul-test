@@ -11,9 +11,9 @@ graph TD
 a --> b
 c --> `Shaud`
 d --> `Functions1`
-e --> `CallLongFunction1`
+e --> `Shaud`
 ```
-<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\> `Shaud`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`\"/><br/>\nd \\-\\-\\> `Functions1`<swm-token data-swm-token=\":functions1.cs:3:4:4:`public class Functions1`\"/><br/>\ne \\-\\-\\> `CallLongFunction1`<swm-token data-swm-token=\":functions2.cs:28:5:5:`    public void CallLongFunction1()`\"/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\> `Shaud`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`\"/><br/>\nd \\-\\-\\> `Functions1`<swm-token data-swm-token=\":functions1.cs:3:4:4:`public class Functions1`\"/><br/>\ne \\-\\-\\> `Shaud`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`\"/>"} --->
 
 <br/>
 
