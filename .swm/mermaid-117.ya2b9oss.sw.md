@@ -5,13 +5,15 @@ file_version: 1.1.3
 app_version: 1.17.0
 ---
 
-<!--MERMAID {width:25}-->
+<!--MERMAID {width:100}-->
 ```mermaid
 graph TD
+
 a --> b
-c -->d
+
+c --> `Shauf`
 ```
-<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\>d"} --->
+<!--MCONTENT {content: "graph TD\n\na \\-\\-\\> b\n\nc \\-\\-\\> `Shauf`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shauf`\"/>"} --->
 
 <br/>
 
