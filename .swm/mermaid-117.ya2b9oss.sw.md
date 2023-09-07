@@ -10,12 +10,10 @@ app_version: 1.17.0
 graph TD
 a --> b
 c --> `Shauf`
-
 d --> `Functions1`
-
 e --> `CallAddFunction`
 ```
-<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\> `Shauf`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shauf`\"/>\n\nd \\-\\-\\> `Functions1`<swm-token data-swm-token=\":functions1.cs:3:4:4:`public class Functions1`\"/>\n\ne \\-\\-\\> `CallAddFunction`<swm-token data-swm-token=\":functions2.cs:5:5:5:`    public void CallAddFunction()`\"/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\> `Shauf`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shauf`\"/><br/>\nd \\-\\-\\> `Functions1`<swm-token data-swm-token=\":functions1.cs:3:4:4:`public class Functions1`\"/><br/>\ne \\-\\-\\> `CallAddFunction`<swm-token data-swm-token=\":functions2.cs:5:5:5:`    public void CallAddFunction()`\"/>"} --->
 
 <br/>
 
