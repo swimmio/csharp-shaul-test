@@ -2,7 +2,7 @@ using System;
 
 public class Functions2
 {
-    public void CallAddFunction()
+    // completely different line
     {
         Functions1 functions1 = new Functions1();
         int result = functions1.Add(5, 3);
