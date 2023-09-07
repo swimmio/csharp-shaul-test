@@ -12,7 +12,6 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [Another doc](another-doc.jmt3qyqt.sw.md)
-2. [youtube](youtube.z0lrner6.sw.md)
 
 
 <br/>
