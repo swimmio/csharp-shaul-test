@@ -5,19 +5,48 @@ file_version: 1.1.3
 app_version: 1.17.1
 ---
 
-`Shaut`<swm-token data-swm-token=":repositories/TreatmentRepository.cs:9:3:3:`        public Shaut`"/>
+`Shaud`<swm-token data-swm-token=":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`"/>
+
+<br/>
 
 <br/>
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 NewCode.cs
+### 📄 Program.cs
 ```c#
-16                 // Commit 1
-17                 // Commit 2 - develop keeps going
-18                 // Commit 3 - develop goes more
-19                 // Commit 4 - develop goes more forward
-20                 var builder = new ConfigurationBuilder()
+1      
+2      using System;
+3      using System.IO;
+4      using System.Data.SqlClient;
+5      using System.Linq;
+6      using System.Collections.Generic;
+7      using Microsoft.Extensions.Configuration;
+8      using RepositoryPattern.repositories;
+9      using RepositoryPattern.models;
+10     
+11     namespace RepositoryPattern
+12     {
+13         class Program
+14         {
+15             static void Main(string[] args)
+16             {
+17                 // Test the pattern
+18                 var builder = new ConfigurationBuilder()
+19                     .SetBasePath(Directory.GetCurrentDirectory())
+20                     .AddJsonFile("global.json");
+21                 string conString = builder.Build().GetConnectionString("DefaultConnection");
+22     
+23                 MyContext myContext = MyContextFactory.Create(conString);
+24                 TreatmentRepository tr = new TreatmentRepository(myContext);
+25                 foreach (Treatment item in tr.GetAll())
+26                 {
+27                     Console.WriteLine(item.Text);
+28                 }
+29                 Console.WriteLine(conString);
+30             }
+31         }
+32     }
 ```
 
 <br/>
