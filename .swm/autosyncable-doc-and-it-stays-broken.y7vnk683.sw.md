@@ -9,15 +9,44 @@ app_version: 1.17.1
 
 <br/>
 
+<br/>
+
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 NewCode.cs
+### 📄 Program.cs
 ```c#
-7      using RepositoryPattern.repositories;
-8      using RepositoryPattern.models;
-9      
-10     namespace RepositoryPattern
-11     {
+1      
+2      using System;
+3      using System.IO;
+4      using System.Data.SqlClient;
+5      using System.Linq;
+6      using System.Collections.Generic;
+7      using Microsoft.Extensions.Configuration;
+8      using RepositoryPattern.repositories;
+9      using RepositoryPattern.models;
+10     
+11     namespace RepositoryPattern
+12     {
+13         class Program
+14         {
+15             static void Main(string[] args)
+16             {
+17                 // Test the pattern
+18                 var builder = new ConfigurationBuilder()
+19                     .SetBasePath(Directory.GetCurrentDirectory())
+20                     .AddJsonFile("global.json");
+21                 string conString = builder.Build().GetConnectionString("DefaultConnection");
+22     
+23                 MyContext myContext = MyContextFactory.Create(conString);
+24                 TreatmentRepository tr = new TreatmentRepository(myContext);
+25                 foreach (Treatment item in tr.GetAll())
+26                 {
+27                     Console.WriteLine(item.Text);
+28                 }
+29                 Console.WriteLine(conString);
+30             }
+31         }
+32     }
 ```
 
 <br/>
