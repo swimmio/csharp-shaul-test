@@ -32,13 +32,13 @@ class Zebra{
 ```mermaid
 graph TD
 A[Christmas] -->|Get money| B(Go shopping)
-B --> C{`main`}
+B --> C{`notMain`}
 C -->|One| D[Laptop]
 C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
 ```
-<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{`main`<swm-token data-swm-token=\":Program.cs:1:6:6:`public static void main () {`\"/>}<br/>\nC \\-\\-\\>|One| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{`notMain`<swm-token data-swm-token=\":Program.cs:1:6:6:`public static void notMain () {`\"/>}<br/>\nC \\-\\-\\>|One| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
 
 <br/>
 
@@ -46,14 +46,13 @@ C -->|Three| F[fa:fa-car Car]
 ```mermaid
 graph TD
 A[Christmas] -->|Get money| B(Go shopping)
-B --> C{`Dispose`}
+B --> C{`tax`}
 C -->|One| D[Laptop]
 C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
-
 ```
-<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{`Dispose`<swm-token data-swm-token=\":UnitOfWork.cs:22:5:5:`        public void Dispose()`\"/>}<br/>\nC \\-\\-\\>|One| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n\n<br/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{`tax`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:11:1:1:`            tax { return Context as MyContext; }`\"/>}<br/>\nC \\-\\-\\>|One| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
 
 <br/>
 
