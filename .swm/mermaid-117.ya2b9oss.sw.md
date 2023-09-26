@@ -2,18 +2,14 @@
 id: ya2b9oss
 title: Mermaid 1.17
 file_version: 1.1.3
-app_version: 1.17.0
+app_version: 1.17.4
 ---
 
 <!--MERMAID {width:100}-->
 ```mermaid
-graph TD
-a --> b
-c --> `Shaud`
-d --> `Functions1`
-e --> `Shaud`
+
 ```
-<!--MCONTENT {content: "graph TD<br/>\na \\-\\-\\> b<br/>\nc \\-\\-\\> `Shaud`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`\"/><br/>\nd \\-\\-\\> `Functions1`<swm-token data-swm-token=\":functions1.cs:3:4:4:`public class Functions1`\"/><br/>\ne \\-\\-\\> `Shaud`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaud`\"/>"} --->
+<!--MCONTENT {content: "<br/>"} --->
 
 <br/>
 
