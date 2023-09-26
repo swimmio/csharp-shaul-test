@@ -5,7 +5,7 @@ file_version: 1.1.3
 app_version: 1.17.4
 ---
 
-<!--MERMAID {width:100}-->
+<!--MERMAID {width:50}-->
 ```mermaid
 classDiagram
 <br/>Animal <|-- Fish
