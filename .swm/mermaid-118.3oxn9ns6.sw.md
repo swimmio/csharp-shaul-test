@@ -15,7 +15,7 @@ Animal : +String gender
 Animal: +isMammal()
 Animal: +mate()
 <br/>class Fish{
-\-int sizeInFeet
+\-int `Shaut`
 \-canEat()
 }
 class Zebra{
@@ -24,7 +24,7 @@ class Zebra{
 }
 
 ```
-<!--MCONTENT {content: "classDiagram<br/>\n<br/>Animal <|-- Fish<br/>\nAnimal <|-- Zebra<br/>\nAnimal : +int age<br/>\nAnimal : +String gender<br/>\nAnimal: +isMammal()<br/>\nAnimal: +mate()<br/>\n<br/>class Fish{<br/>\n\\-int sizeInFeet<br/>\n\\-canEat()<br/>\n}<br/>\nclass Zebra{<br/>\n+bool is\\_wild<br/>\n+run()<br/>\n}<br/>\n<br/>"} --->
+<!--MCONTENT {content: "classDiagram<br/>\n<br/>Animal <|-- Fish<br/>\nAnimal <|-- Zebra<br/>\nAnimal : +int age<br/>\nAnimal : +String gender<br/>\nAnimal: +isMammal()<br/>\nAnimal: +mate()<br/>\n<br/>class Fish{<br/>\n\\-int `Shaut`<swm-token data-swm-token=\":repositories/TreatmentRepository.cs:9:3:3:`        public Shaut`\"/><br/>\n\\-canEat()<br/>\n}<br/>\nclass Zebra{<br/>\n+bool is\\_wild<br/>\n+run()<br/>\n}<br/>\n<br/>"} --->
 
 <br/>
 
