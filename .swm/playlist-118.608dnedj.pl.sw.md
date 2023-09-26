@@ -14,8 +14,7 @@ Some text
 
 <!-- Steps - Do not remove this comment -->
 1. [Mermaid 1.15](mermaid-115.3uilhbnn.sw.md)
-2. [Mermaid 1.18](mermaid-118.3oxn9ns6.sw.md)
-3. [Youtube](youtube.tf5e24wd.sw.md)
+2. [Youtube](youtube.tf5e24wd.sw.md)
 
 
 <br/>
