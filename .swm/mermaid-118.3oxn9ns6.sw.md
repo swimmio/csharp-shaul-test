@@ -8,19 +8,13 @@ app_version: 1.17.4
 <!--MERMAID {width:100}-->
 ```mermaid
 classDiagram
-Animal <|-- Duck
-Animal <|-- Fish
+<br/>Animal <|-- Fish
 Animal <|-- Zebra
 Animal : +int age
 Animal : +String gender
 Animal: +isMammal()
 Animal: +mate()
-class Duck{
-+String beakColor
-+swim()
-+quack()
-}
-class Fish{
+<br/>class Fish{
 \-int sizeInFeet
 \-canEat()
 }
@@ -29,9 +23,8 @@ class Zebra{
 +run()
 }
 
-
 ```
-<!--MCONTENT {content: "classDiagram<br/>\nAnimal <|-- Duck<br/>\nAnimal <|-- Fish<br/>\nAnimal <|-- Zebra<br/>\nAnimal : +int age<br/>\nAnimal : +String gender<br/>\nAnimal: +isMammal()<br/>\nAnimal: +mate()<br/>\nclass Duck{<br/>\n+String beakColor<br/>\n+swim()<br/>\n+quack()<br/>\n}<br/>\nclass Fish{<br/>\n\\-int sizeInFeet<br/>\n\\-canEat()<br/>\n}<br/>\nclass Zebra{<br/>\n+bool is\\_wild<br/>\n+run()<br/>\n}<br/>\n\n<br/>"} --->
+<!--MCONTENT {content: "classDiagram<br/>\n<br/>Animal <|-- Fish<br/>\nAnimal <|-- Zebra<br/>\nAnimal : +int age<br/>\nAnimal : +String gender<br/>\nAnimal: +isMammal()<br/>\nAnimal: +mate()<br/>\n<br/>class Fish{<br/>\n\\-int sizeInFeet<br/>\n\\-canEat()<br/>\n}<br/>\nclass Zebra{<br/>\n+bool is\\_wild<br/>\n+run()<br/>\n}<br/>\n<br/>"} --->
 
 <br/>
 
