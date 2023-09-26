@@ -1,3 +1,3 @@
 ﻿public static void main () {
-    return 0;
+    return 1;
 }
