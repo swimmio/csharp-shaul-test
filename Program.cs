@@ -1,3 +1,3 @@
-﻿public static void main () {
+﻿public static void notMain () {
     return 1;
 }
