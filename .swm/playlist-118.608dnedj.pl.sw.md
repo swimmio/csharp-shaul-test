@@ -15,8 +15,7 @@ Some text
 <!-- Steps - Do not remove this comment -->
 1. [Mermaid 1.15](mermaid-115.3uilhbnn.sw.md)
 2. [Youtube](youtube.tf5e24wd.sw.md)
-3. [Playlist test 2](playlist-test-2.cx3bk.pl.sw.md)
-4. [Yahoo](https://google.com)
+3. [Yahoo](https://google.com)
 
 
 <br/>
