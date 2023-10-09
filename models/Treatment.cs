@@ -6,7 +6,7 @@ namespace RepositoryPattern.models
     [Table("treatment")]
     public class Treatment
     {
-        [Column("treatmentid3")]
+        [Column("treatmentid-6ead9928-514f-4296-92cf-e1a84fdd6c3c3")]
         public int Id { get; set; }
         [Column("treatmenttext")]
         public string Text { get; set; }
