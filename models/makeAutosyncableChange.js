@@ -1,42 +1,42 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var child_process_1 = require("child_process");
 var fs = require("fs");
-var path = require("path");
+var child_process = require("child_process");
 var uuid_1 = require("uuid");
-var fileName = process.argv[2];
-var stringToReplace = process.argv[3];
-var mainBranchName = process.argv[4] || "main";
+var _a = process.argv.slice(2), fileName = _a[0], stringToReplace = _a[1], _b = _a[2], mainBranchName = _b === void 0 ? 'main' : _b;
 if (!fileName || !stringToReplace) {
-    console.error("Usage: node script.js <fileName> <stringToReplace> [mainBranchName]");
+    console.error('Usage: node script.js fileName stringToReplace [mainBranchName]');
     process.exit(1);
 }
-var filePath = path.resolve(__dirname, fileName);
-if (!fs.existsSync(filePath)) {
-    console.error("File ".concat(fileName, " not found."));
-    process.exit(1);
-}
-var fileContents = fs.readFileSync(filePath, 'utf-8');
-if (!fileContents.includes(stringToReplace)) {
-    console.error("String '".concat(stringToReplace, "' not found in file."));
-    process.exit(1);
-}
-var uuid = (0, uuid_1.v4)();
-var updatedContents = fileContents.replace(new RegExp(stringToReplace, 'g'), "".concat(stringToReplace, "-").concat(uuid));
-fs.writeFileSync(filePath, updatedContents);
 try {
-    (0, child_process_1.execSync)("git checkout ".concat(mainBranchName));
-    var dateOfToday = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, '-');
-    (0, child_process_1.execSync)("git checkout -b temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid));
-    (0, child_process_1.execSync)('git add .');
-    (0, child_process_1.execSync)('git commit -m "Auto-sync changes"');
-    (0, child_process_1.execSync)("git push origin temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid));
-    (0, child_process_1.execSync)("gh pr create --base ".concat(mainBranchName, " --head temp-autosync-branch-").concat(dateOfToday, "-").concat(uuid, " --title \"Auto-sync changes\" --body \"Automatically synced changes\""));
-    (0, child_process_1.execSync)("git checkout ".concat(mainBranchName));
-    (0, child_process_1.execSync)('git pull');
-    console.log("Pull request created: https://github.com/<username>/<repository>/pulls");
+    var fileContents = fs.readFileSync(fileName, 'utf-8');
+    if (!fileContents.includes(stringToReplace)) {
+        throw new Error("String '".concat(stringToReplace, "' not found in the file."));
+    }
+    var replacedContents = fileContents.replace(new RegExp(stringToReplace, 'g'), "".concat(stringToReplace, "-").concat((0, uuid_1.v4)()));
+    fs.writeFileSync(fileName, replacedContents);
+    var uuid = (0, uuid_1.v4)();
+    var dateOfToday = new Date().toISOString().slice(0, 19).replace(/[-T:/]/g, '-');
+    // Step 0
+    child_process.execSync("git checkout ".concat(mainBranchName));
+    // Step 1
+    child_process.execSync("git checkout -b temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid));
+    // Step 2
+    child_process.execSync("git add ".concat(fileName));
+    child_process.execSync("git commit -m \"Auto sync: Replaced ".concat(stringToReplace, "\""));
+    // Step 3
+    child_process.execSync("git push origin temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid));
+    // Step 4
+    var pullRequestName = "temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid);
+    child_process.execSync("gh pr create --base ".concat(mainBranchName, " --head ").concat(pullRequestName, " --title ").concat(pullRequestName));
+    // Step 5
+    child_process.execSync("git checkout ".concat(mainBranchName));
+    // Step 6
+    child_process.execSync("git pull");
+    // Step 7
+    console.log("Pull request created: https://github.com/your-username/your-repo/pull/new/".concat(mainBranchName, "...").concat(pullRequestName));
 }
 catch (error) {
-    console.error("Error: ".concat(error.message));
+    console.error(error.message);
     process.exit(1);
 }
