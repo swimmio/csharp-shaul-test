@@ -28,7 +28,7 @@ try {
     child_process.execSync("git push origin temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid));
     // Step 4
     var pullRequestName = "temp-autosync-branch-".concat(dateOfToday, "-").concat(uuid);
-    child_process.execSync("gh pr create --base ".concat(mainBranchName, " --head ").concat(pullRequestName, " --title ").concat(pullRequestName));
+    child_process.execSync("gh pr create --base ".concat(mainBranchName, " --head ").concat(pullRequestName, " --title ").concat(pullRequestName, " --body \"Auto-generated pull request\""));
     // Step 5
     child_process.execSync("git checkout ".concat(mainBranchName));
     // Step 6
