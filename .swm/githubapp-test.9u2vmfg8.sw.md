@@ -8,9 +8,9 @@ app_version: 1.18.0
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 models/Treatment.cs
 ```c#
-9              [Column("treatmentid2023100915080220231009150122")]
+9              [Column("treatment20231009160530id202310091514002023100915080220231009150122")]
 10             public int Id { get; set; }
-11             [Column("treatmenttext")]
+11             [Column("treatment20231009160530text")]
 12             public string Text { get; set; }
 13             [Column("price")]
 14             public int Price { get; set; }
