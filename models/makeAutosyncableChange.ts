@@ -31,7 +31,7 @@ const updatedContent = fileContent.replace(
 fs.writeFileSync(filePath, updatedContent, 'utf-8');
 
 try {
-  execSync('git pull');
+  execSync('git pull --rebase');
   execSync(`git checkout ${mainBranchName}`);
   execSync(`git checkout -b temp-autosync-branch-${dateOfToday}`);
   execSync(`git add ${fileName}`);

@@ -20,7 +20,7 @@ if (!fileContent.includes(stringToReplace)) {
 var updatedContent = fileContent.replace(new RegExp(stringToReplace, 'g'), "".concat(stringToReplace).concat(dateOfToday));
 fs.writeFileSync(filePath, updatedContent, 'utf-8');
 try {
-    (0, child_process_1.execSync)('git pull');
+    (0, child_process_1.execSync)('git pull --rebase');
     (0, child_process_1.execSync)("git checkout ".concat(mainBranchName));
     (0, child_process_1.execSync)("git checkout -b temp-autosync-branch-".concat(dateOfToday));
     (0, child_process_1.execSync)("git add ".concat(fileName));
