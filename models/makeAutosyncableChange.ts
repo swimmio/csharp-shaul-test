@@ -1,7 +1,7 @@
 import * as fs from 'fs';
-import { execSync } from 'child_process';
+import * as child_process from 'child_process';
 
-function replaceString(fileName: string, stringToReplace: string, mainBranchName?: string) {
+function replaceString(fileName: string, stringToReplace: string) {
     const content = fs.readFileSync(fileName, 'utf-8');
     const regex = new RegExp(`${stringToReplace}(\\d*)`, 'g');
     const matches = content.match(regex);
@@ -28,28 +28,58 @@ function replaceString(fileName: string, stringToReplace: string, mainBranchName
     fs.writeFileSync(fileName, updatedContent, 'utf-8');
     console.log(`String "${stringToReplace}" replaced successfully.`);
 
-    if (mainBranchName) {
-        try {
-            execSync(`git checkout -b temp-autosync-branch-${replacementNumber}`);
-            execSync('git add .');
-            execSync(`git commit -m "Auto-sync: Replaced ${stringToReplace} with ${stringToReplace}${replacementNumber}"`);
-            execSync('git push origin HEAD');
-            execSync(`git checkout ${mainBranchName}`);
-            execSync(`git pull origin ${mainBranchName}`);
-        } catch (error) {
-            console.error('Error in Git operations:', error.message);
-            process.exit(1);
-        }
+    return replacementNumber;
+}
+
+function executeCommand(command: string) {
+    const result = child_process.spawnSync(command, {
+        shell: true,
+        stdio: 'inherit'
+    });
+
+    if (result.status !== 0) {
+        throw new Error(`Error executing command: ${command}`);
     }
 }
 
-const fileName = process.argv[2];
-const stringToReplace = process.argv[3];
-const mainBranchName = process.argv[4];
+function main() {
+    const fileName = process.argv[2];
+    const stringToReplace = process.argv[3];
+    const mainBranchName = process.argv[4] || 'main';
 
-if (!fileName || !stringToReplace) {
-    console.error('Please provide both fileName and stringToReplace as arguments.');
-    process.exit(1);
+    if (!fileName || !stringToReplace) {
+        console.error('Please provide both fileName and stringToReplace as arguments.');
+        process.exit(1);
+    }
+
+    try {
+        const replacementNumber = replaceString(fileName, stringToReplace);
+
+        // Step 0
+        executeCommand(`git checkout ${mainBranchName}`);
+
+        // Step 1
+        const tempBranchName = `temp-autosync-branch-${replacementNumber}`;
+        executeCommand(`git checkout -b ${tempBranchName}`);
+
+        // Step 2
+        executeCommand(`git add ${fileName}`);
+        executeCommand(`git commit -m "Automated commit: Replace ${stringToReplace}"`);
+
+        // Step 3
+        executeCommand(`git push origin ${tempBranchName}`);
+
+        // Step 4
+        executeCommand(`git checkout ${mainBranchName}`);
+
+        // Step 5
+        executeCommand(`git pull`);
+
+        console.log('Operation completed successfully.');
+    } catch (error) {
+        console.error(error.message);
+        process.exit(1);
+    }
 }
 
-replaceString(fileName, stringToReplace, mainBranchName);
+main();
