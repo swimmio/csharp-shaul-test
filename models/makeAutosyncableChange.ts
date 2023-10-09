@@ -40,7 +40,7 @@ try {
 
   // Step 4
   const pullRequestName = `temp-autosync-branch-${dateOfToday}-${uuid}`;
-  child_process.execSync(`gh pr create --base ${mainBranchName} --head ${pullRequestName} --title ${pullRequestName}`);
+  child_process.execSync(`gh pr create --base ${mainBranchName} --head ${pullRequestName} --title ${pullRequestName} --body "Auto-generated pull request"`);
 
   // Step 5
   child_process.execSync(`git checkout ${mainBranchName}`);
