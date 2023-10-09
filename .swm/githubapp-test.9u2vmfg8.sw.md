@@ -5,11 +5,10 @@ file_version: 1.1.3
 app_version: 1.18.0
 ---
 
-
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 models/Treatment.cs
 ```c#
-9              [Column("treatmentid")]
+9              [Column("treatmentid8")]
 10             public int Id { get; set; }
 11             [Column("treatmenttext")]
 12             public string Text { get; set; }
