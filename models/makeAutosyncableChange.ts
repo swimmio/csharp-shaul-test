@@ -1,35 +1,38 @@
-import * as fs from 'fs';
 import { execSync } from 'child_process';
+import * as fs from 'fs';
+import * as path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
-const [fileName, stringToReplace, mainBranchName = 'main'] = process.argv.slice(2);
+const fileName = process.argv[2];
+const stringToReplace = process.argv[3];
+const mainBranchName = process.argv[4] || 'main';
 
 if (!fileName || !stringToReplace) {
-  console.error('Usage: node script.js <fileName> <stringToReplace> [mainBranchName]');
+  console.error('Usage: node script.js <fileName> <stringToReplace> [<mainBranchName>]');
   process.exit(1);
 }
-
-const content = fs.readFileSync(fileName, 'utf-8');
-
-if (!content.includes(stringToReplace)) {
-  console.error(`Error: String '${stringToReplace}' not found in file.`);
-  process.exit(1);
-}
-
-const replacedContent = content.replace(new RegExp(`${stringToReplace}-[0-9a-f-]+`, 'g'), `${stringToReplace}-${uuidv4()}`);
-fs.writeFileSync(fileName, replacedContent, 'utf-8');
 
 try {
+  const fileContent = fs.readFileSync(fileName, 'utf8');
+  if (!fileContent.includes(stringToReplace)) {
+    throw new Error(`String "${stringToReplace}" not found in the file.`);
+  }
+
+  const uuidValue = uuidv4();
+  const replacedContent = fileContent.replace(new RegExp(stringToReplace, 'g'), `${stringToReplace}-${uuidValue}`);
+  fs.writeFileSync(fileName, replacedContent, 'utf8');
+
+  const tempBranchName = `temp-autosync-branch-${(new Date()).toISOString().split('T')[0].replace(/-/g, '')}-${uuidValue}`;
   execSync(`git checkout ${mainBranchName}`);
-  const dateOfToday = new Date().toISOString().slice(0, 16).replace(/[-T:]/g, '-');
-  const tempBranchName = `temp-autosync-branch-${dateOfToday}-${uuidv4()}`;
   execSync(`git checkout -b ${tempBranchName}`);
   execSync(`git add ${fileName}`);
-  execSync(`git commit -m "Auto-sync: Replace ${stringToReplace} with ${stringToReplace}-<uuid>"`);
+  execSync(`git commit -m "Auto sync changes"`);
   execSync(`git push origin ${tempBranchName}`);
   execSync(`git checkout ${mainBranchName}`);
   execSync(`git pull`);
+
+  console.log('Script executed successfully.');
 } catch (error) {
-  console.error(`Error: ${error.message}`);
+  console.error(error.message);
   process.exit(1);
 }
