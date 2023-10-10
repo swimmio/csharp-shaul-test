@@ -12,9 +12,9 @@ Some text
 
 <!-- Steps - Do not remove this comment -->
 1. [Mermaid 1.15](mermaid-115.3uilhbnn.sw.md)
-2. [Youtube](youtube.tf5e24wd.sw.md)
-3. [Google](https://google.com)
-5. [Ido Yahoo](https://yahoo.com)
+2. [Google](https://google.com)
+3. [Youtube](youtube.tf5e24wd.sw.md)
+4. [Ido Yahoo](https://yahoo.com)
 
 
 <br/>
