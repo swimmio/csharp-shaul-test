@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RepositoryPattern.models
 {
-    [Table("treatment1")]
+    [Table("treatment2")]
     public class Treatment
     {
         [Column("treatmentid")]
