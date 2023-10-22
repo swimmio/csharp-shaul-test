@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RepositoryPattern.models
 {
-    [Table("treatment20231016094405202310121352521")]
+    [Table("treatment2023102216071820231016094405202310121352521")]
     public class Treatment
     {
-        [Column("treatment2023101609440520231012135252id202310091514002023100915080220231009150122")]
+        [Column("treatment202310221607182023101609440520231012135252id202310091514002023100915080220231009150122")]
         public int Id { get; set; }
-        [Column("treatment2023101609440520231012135252text")]
+        [Column("treatment202310221607182023101609440520231012135252text")]
         public string Text { get; set; }
         [Column("price")]
         public int Price { get; set; }
