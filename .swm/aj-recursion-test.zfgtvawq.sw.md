@@ -33,15 +33,27 @@ Alice->>+John: John, can you hear me?
 John-->>-Alice: Hi Alice, I `adding_a` hear you!
 John-->>-Alice: I feel great!
 
-
 ```
-<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi Alice, I `adding_a`<swm-token data-swm-token=\"Z2l0aHViJTNBJTNBc3dpbW0tbGFicyUzQSUzQXN3aW1taW8=:main.py:19:8:8:`from labs.generate import adding_a`\"/> hear you!<br/>\nJohn\\-\\-\\>>-Alice: I feel great!<br/>\n\n<br/>"} --->
+<!--MCONTENT {content: "sequenceDiagram<br/>\nAlice->>+John: Hello John, how are you?<br/>\nAlice->>+John: John, can you hear me?<br/>\nJohn\\-\\-\\>>-Alice: Hi Alice, I `adding_a`<swm-token data-swm-token=\"Z2l0aHViJTNBJTNBc3dpbW0tbGFicyUzQSUzQXN3aW1taW8=:main.py:19:8:8:`from labs.generate import adding_a`\"/> hear you!<br/>\nJohn\\-\\-\\>>-Alice: I feel great!<br/>\n<br/>"} --->
 
 <br/>
 
 [swimm/Segment <> Slack Integrationaasdasdasdasd](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/0238g)
 
 <br/>
+
+<br/>
+
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 MyContext.cs
+```c#
+6          public class MyContext : DbContext
+7          {
+8              public MyContext(DbContextOptions<MyContext> options) : base(options) {}
+9              public virtual DbSet<Treatment> Treatments { get; set; }
+10         }
+```
 
 <br/>
 
