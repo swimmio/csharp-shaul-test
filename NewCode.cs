@@ -16,6 +16,8 @@ namespace RepositoryPattern
             // Commit 1
             // Commit 2 - develop keeps going
             // Commit 3 - develop goes more
+            // Commit 3.5 - develop goes more
+            // Commit 3.6 - develop goes more
             // Commit 4 - develop goes more forward
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
