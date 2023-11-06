@@ -5,14 +5,15 @@ file_version: 1.1.3
 app_version: 1.18.24
 ---
 
-
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 NewCode.cs
 ```c#
 16                 // Commit 1
 17                 // Commit 2 - develop keeps going
 18                 // Commit 3 - develop goes more
-19                 // Commit 4 - develop goes more forward
+19                 // Commit 3.5 - develop goes more
+20                 // Commit 3.6 - develop goes more
+21                 // Commit 4 - develop goes more forward
 ```
 
 <br/>
