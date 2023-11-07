@@ -13,7 +13,6 @@ test
 <!-- Steps - Do not remove this comment -->
 1. [Doc1](doc1.kz7oo2im.sw.md)
 2. [Doc 2](doc-2.euygfoaf.sw.md)
-3. [Doc 3](doc-3.puj7bau5.sw.md)
 
 
 <br/>
