@@ -12,8 +12,8 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [Doc 1](doc-1.s75g4f9w.sw.md)
-2. [Doc 2](doc-2.ngpnpbt4.sw.md)
-3. [Doc 3](doc-3.id2i4tnl.sw.md)
+2. [Doc 3](doc-3.id2i4tnl.sw.md)
+3. [Doc 2](doc-2.ngpnpbt4.sw.md)
 
 
 <br/>
