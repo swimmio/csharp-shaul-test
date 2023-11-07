@@ -12,6 +12,7 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [Youtube doc](youtube-doc.35entzja.sw.md)
+2. [Another doc](another-doc.jo7ap1bo.sw.md)
 
 
 <br/>
