@@ -30,12 +30,10 @@ a --> DbContext
 
 ```mermaid
 graph TD
-a --> b
 c --> options
 
 %% Swimm:
 %% graph TD
-%% a --> b
 %% c --> <SwmToken path="/MyContext.cs" pos="8:10:10" line-data="        public MyContext(DbContextOptions&lt;MyContext&gt; options) : base(options) {}">`options`</SwmToken>
 ```
 
