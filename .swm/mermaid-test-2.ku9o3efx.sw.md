@@ -19,8 +19,7 @@ a --> DbContext
 ```c#
     public class MyContext : DbContext
     {
-        public MyContext(DbContextOptions<MyContext> options) : base(options) {}
-        public virtual DbSet<Treatment> Treatments { get; set; }
+        public MyContext(DbContextOptions<MyContext> options) : base(optForShaulan) {}
     }
 ```
 
@@ -30,22 +29,13 @@ a --> DbContext
 
 ```mermaid
 graph TD
-c --> options
-
-%% Swimm:
-%% graph TD
-%% c --> <SwmToken path="/MyContext.cs" pos="8:10:10" line-data="        public MyContext(DbContextOptions&lt;MyContext&gt; options) : base(options) {}">`options`</SwmToken>
+c --> d
 ```
 
 ```mermaid
 graph TD
 e --> f
-g --> DbSet
-
-%% Swimm:
-%% graph TD
-%% e --> f
-%% g --> <SwmToken path="/MyContext.cs" pos="9:5:5" line-data="        public virtual DbSet&lt;Treatment&gt; Treatments { get; set; }">`DbSet`</SwmToken>
+g --> f
 ```
 
 <SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBY3NoYXJwLXNoYXVsLXRlc3QlM0ElM0Fzd2ltbWlv" repo-name="csharp-shaul-test"><sup>Powered by [Swimm](https://swimm-web-app.web.app/)</sup></SwmMeta>
