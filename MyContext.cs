@@ -5,6 +5,6 @@ namespace RepositoryPattern
 {
     public class MyContext : DbContext
     {
-        public MyContext(DbContextOptions<MyContext> options) : base(optForShaulan) {}
+        public MyContext(DbContextOptions<MyContext> options) : base(optForMe) {}
     }
 }
