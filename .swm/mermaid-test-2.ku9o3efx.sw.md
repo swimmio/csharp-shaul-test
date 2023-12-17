@@ -19,7 +19,7 @@ a --> DbContext
 ```c#
     public class MyContext : DbContext
     {
-        public MyContext(DbContextOptions<MyContext> options) : base(optForShaulan) {}
+        public MyContext(DbContextOptions<MyContext> options) : base(optForMe) {}
     }
 ```
 
@@ -29,11 +29,11 @@ a --> DbContext
 
 ```mermaid
 graph TD
-c --> optForShaulan
+c --> optForMe
 
 %% Swimm:
 %% graph TD
-%% c --> <SwmToken path="/MyContext.cs" pos="8:17:17" line-data="        public MyContext(DbContextOptions&lt;MyContext&gt; options) : base(optForShaulan) {}">`optForShaulan`</SwmToken>
+%% c --> <SwmToken path="/MyContext.cs" pos="8:17:17" line-data="        public MyContext(DbContextOptions&lt;MyContext&gt; options) : base(optForMe) {}">`optForMe`</SwmToken>
 ```
 
 ```mermaid
