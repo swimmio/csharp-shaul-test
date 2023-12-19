@@ -5,7 +5,7 @@ file_version: 1.1.3
 app_version: 1.18.45
 ---
 
-<div align="center"><img src="https://firebasestorage.googleapis.com/v0/b/swimmio-content/o/repositories%2FZ2l0aHViJTNBJTNBY3NoYXJwLXNoYXVsLXRlc3QlM0ElM0Fzd2ltbWlv%2Fc2eb8622-97c4-48e4-be06-70ce19943da6.png?alt=media&token=6e477e1e-b1a1-44c9-834d-427acc3307df" style="width:'50%'"/></div>
+<div align="center"><img src="images/462de771-fc4a-4bdb-b085-ef64eb9ca62b.png" style="width:'50%'"/></div>
 
 <br/>
 
