@@ -13,6 +13,7 @@ Test
 <!-- Steps - Do not remove this comment -->
 1. [doc 2 1.19](doc-2-119.4qf6y92t.sw.md)
 2. [Yahoo](https://google.com)
+3. [Playlist within a playlist](playlist-within-a-playlist.3vplnzq8.pl.sw.md)
 
 
 <br/>
