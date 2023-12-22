@@ -5,7 +5,7 @@ title: doc with snippet from test github app
 
 ---
 
-snippet
+snippet 123
 
 ```python
 def foo(a):
