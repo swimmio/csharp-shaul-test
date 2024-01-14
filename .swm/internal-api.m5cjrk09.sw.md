@@ -9,11 +9,40 @@ We use this API when {{use cases}}.
 
 ## API definition
 
-<SwmSnippetPlaceholder>
+## 
 
-Select snippets of the various function's definition, so the reader can understand where the API is implemented
+<SwmSnippet path="/NewCode.cs" line="16">
 
-</SwmSnippetPlaceholder>
+---
+
+&nbsp;
+
+```c#
+            // Commit 1
+            // Commit 2 - develop keeps going
+            // Commit 3 - develop goes more
+            // Commit 3.5 - develop goes more
+            // Commit 3.6 - develop goes more
+            // Commit 4 - develop goes more forward
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("global.json");
+            string conString = builder.Build().GetConnectionString("DefaultConnection");
+            // I want to cherry pick this to the tag.
+
+            MyContext myContext = MyContextFactory.Create(conString);
+            TreatmentRepository tr = new TreatmentRepository(myContext);
+            foreach (Treatment item in tr.GetAll())
+            {
+                Console.WriteLine(item.Text);
+            }
+            // Cherry pick this, with a squash commit
+            Console.WriteLine(conString);
+```
+
+---
+
+</SwmSnippet>
 
 ## Simple usage
 
@@ -25,11 +54,21 @@ Show a simple example of using this API
 
 ## Advanced usage: {{explain a scenario where this is needed}}
 
-<SwmSnippetPlaceholder>
+## 
 
-Show an advanced example of using this API
+<SwmSnippet path="/Program.cs" line="1">
 
-</SwmSnippetPlaceholder>
+---
+
+&nbsp;
+
+```c#
+public static void notMain () {
+```
+
+---
+
+</SwmSnippet>
 
 ## Best practices and additional notes
 
