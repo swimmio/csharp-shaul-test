@@ -11,8 +11,8 @@ test
 <br/>
 
 <!-- Steps - Do not remove this comment -->
-1. [1.21 doc 1](121-doc-1.0cy2wo6f.sw.md)
-2. [1.21 doc 2](121-doc-2.fh2zzm4x.sw.md)
+1. [1.21 doc 2](121-doc-2.fh2zzm4x.sw.md)
+2. [1.21 doc 1](121-doc-1.0cy2wo6f.sw.md)
 
 
 <br/>
