@@ -12,7 +12,7 @@ test
 
 <!-- Steps - Do not remove this comment -->
 1. [1.21 doc 2](121-doc-2.fh2zzm4x.sw.md)
-2. [Google](https://google.com)
+2. [Google](https://yahoo.com)
 
 
 <br/>
