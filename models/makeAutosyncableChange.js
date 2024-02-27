@@ -8,10 +8,9 @@ var mainBranchName = process.argv[4] || "main";
 if (!fileName || !stringToReplace) {
     throw new Error("Usage: node script.ts <fileName> <stringToReplace> [mainBranchName]");
 }
-var dateOfToday = new Date()
-    .toISOString()
-    .replace(/[^0-9]/g, "")
-    .slice(0, 14);
+
+    //.replace(/[^0-9]/g, "")
+    //.slice(0, 14);
 var filePath = "./".concat(fileName);
 if (!fs.existsSync(filePath)) {
     throw new Error("File ".concat(fileName, " does not exist."));
