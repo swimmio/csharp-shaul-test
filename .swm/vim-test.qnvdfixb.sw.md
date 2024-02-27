@@ -1,17 +1,17 @@
 ---
 title: Vim test
 ---
-<SwmSnippet path="/models/makeAutosyncableChange.js" line="11">
+<SwmSnippet path="models/makeAutosyncableChange.js" line="11">
 
 ---
 
 &nbsp;
 
-```javascript
-var dateOfToday = new Date()
-    .toISOString()
-    .replace(/[^0-9]/g, "")
-    .slice(0, 14);
+```
+
+    //.replace(/[^0-9]/g, "")
+    //.slice(0, 14);
+var filePath = "./".concat(fileName);
 ```
 
 ---
